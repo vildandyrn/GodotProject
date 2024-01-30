@@ -1,0 +1,74 @@
+[gd_scene load_steps=12 format=3 uid="uid://bylvqc6usd65v"]
+
+[ext_resource type="PackedScene" uid="uid://ygwf2v4vwpdw" path="res://cac-1706646710678.gltf" id="1_5llag"]
+[ext_resource type="Script" path="res://CharacterBody3D.gd" id="2_y1g74"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_51tpc"]
+albedo_color = Color(0.372549, 0.0862745, 0.211765, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t6c3e"]
+albedo_color = Color(0.180392, 0.611765, 0.498039, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bp0lt"]
+albedo_color = Color(0.4, 0.0745098, 0.145098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dgw4j"]
+material = SubResource("StandardMaterial3D_bp0lt")
+size = Vector3(10, 10, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ajvl8"]
+albedo_color = Color(1, 0.0196078, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5nsh"]
+albedo_color = Color(0.745098, 0.054902, 0.301961, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_kv4dd"]
+material = SubResource("StandardMaterial3D_c5nsh")
+custom_aabb = AABB(2, 2, 2, 22, 2, 2)
+radius = 39.323
+height = 78.646
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8jj1h"]
+
+[sub_resource type="Environment" id="Environment_opa7v"]
+background_mode = 1
+background_color = Color(0.984314, 0.952941, 0.839216, 1)
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 0.514792, 0, 0, 0, 1, 0.099823, -4.76837e-07, -0.0567222)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-1, 0, 0, 0, 1.94253, 0, 0, 0, 1, 1, 53.3667, 5)
+
+[node name="AuxScene" parent="." instance=ExtResource("1_5llag")]
+transform = Transform3D(-0.590537, 0, 0.0203966, 0, 0.75231, 0, 0.133516, 0, 0.0902132, -5.17039, 57.0621, -25.0746)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(16.3743, 0, 1.25505, 0, 1, 0, -5.2651, 0, 3.90318, 5.84253, -0.343009, -23.2558)
+material_override = SubResource("StandardMaterial3D_51tpc")
+material_overlay = SubResource("StandardMaterial3D_t6c3e")
+mesh = SubResource("BoxMesh_dgw4j")
+surface_material_override/0 = SubResource("StandardMaterial3D_bp0lt")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+script = ExtResource("2_y1g74")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+transform = Transform3D(0.060645, 0.130572, -0.121462, 0.0138019, -0.322233, -0.0777369, 0.0564579, -0.0614811, 0.149474, -35.2472, 67.9268, 1.66106)
+material_override = SubResource("StandardMaterial3D_ajvl8")
+material_overlay = SubResource("StandardMaterial3D_ajvl8")
+custom_aabb = AABB(5, 5, 5, 5, 5, 5)
+mesh = SubResource("CapsuleMesh_kv4dd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("CapsuleShape3D_8jj1h")
+
+[node name="cameraorg" type="Node3D" parent="CharacterBody3D"]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CharacterBody3D/cameraorg"]
+spring_length = 2.0
+margin = 0.5
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/cameraorg"]
+transform = Transform3D(1, 0, 0, 0, 1.94253, 0, 0, 0, 1, -15.8324, 86.5275, 106.174)
+environment = SubResource("Environment_opa7v")

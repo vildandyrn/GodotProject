@@ -1,0 +1,34 @@
+[0000.87] Log: Async Log file open, 06/03/22 12:02:07
+[0000.87] Init: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[0000.87] Log:  ... running in INSTALLED mode
+[0000.87] DevConfig: GConfig::Find has loaded file:  ..\..\Engine\Config\ConsoleVariables.ini
+[0000.87] Init: Version: 10897
+[0000.87] Init: Epic Internal: 0
+[0000.87] Init: Compiled (64-bit): Apr 14 2021 15:24:49
+[0000.87] Init: Changelist: 1532151
+[0000.87] Init: Command line: -seekfreeloadingpcconsole -pid=702 -steam -anon -homedir="paladinsroyale" -eac_dir "..\\EasyAntiCheat\\"
+[0000.87] Init: Base directory: C:\Program Files (x86)\Steam\steamapps\common\Realm Royale\Binaries\Win64\
+[0000.88] Log: Deleting old log file Launch-backup-2022.06.03-12.02.07.log
+[0000.88] Init: Computer: DESKTOP-OQEHLUF
+[0000.95] Init: User: VildanDoyuran
+[0000.95] Init: CPU Page size=4096, Processors=16, Cores=8
+[0000.95] Init: High frequency timer resolution =10.000000 MHz
+[0000.95] Init: Memory total: Physical=15.8GB (15GB approx) Pagefile=18.1GB Virtual=131072.0GB
+[0002.34] DevOnline: MCTS message: Calling SetPendingPartyTeamId 0
+[0002.34] DevOnline: Initializing MCTS
+[0002.74] VoiceChat: Info  VivoxApi::CommandHandler::ProcessRequest(645) - this=0x1f6b12d4450,ToXml(request, true)=<Request requestId="" action="Aux.GetCaptureDevices.1" />
+[0002.74] VoiceChat: Info  VivoxApi::CommandHandler::PassCommand(812) - this=0x1f6b12d4450,ToXml(&command->GetResp().base, true)=<Response requestId="" action="Aux.GetCaptureDevices.1"><ReturnCode>0</ReturnCode><Results><StatusCode>0</StatusCode><StatusString /><CaptureDevices><CaptureDevice><Device>{0.0.1.00000000}.{9c80c8c2-fd1f-4330-b87b-11bb91ef5b79}</Device><DisplayName>Mikrofon (Realtek(R) Audio)</DisplayName><Type>SpecificDevice</Type></CaptureDevice><CaptureDevice><Device>{0.0.1.00000000}.{c0771f6d-1c3c-4ea6-863e-e3939de484bf}</Device><DisplayName>Mikrofon (ALPHA-X)</DisplayName><Type>SpecificDevice</Type></CaptureDevice><CaptureDevice><Device>Default System Device</Device><DisplayName>Default System Device</DisplayName><Type>DefaultSystemDevice</Type></CaptureDevice><CaptureDevice><Device>Default Communication Device</Device><DisplayName>Default Communication Device</DisplayName><Type>DefaultCommunicationDevice</Type></CaptureDevice><CaptureDevice><Device>No Device</Device><DisplayName>No Device</DisplayName><Type>NullDevice</Type></CaptureDevice></CaptureDevices><CurrentCaptureDevice><Device>Default System Device</Device><DisplayName>Default System Device</DisplayName><Type>DefaultSystemDevice</Type></CurrentCaptureDevice><EffectiveCaptureDevice><Device>{0.0.1.00000000}.{c0771f6d-1c3c-4ea6-863e-e3939de484bf}</Device><DisplayName>Mikrofon (ALPHA-X)</DisplayName><Type>SpecificDevice</Type></EffectiveCaptureDevice><DefaultCaptureDevice><Device>{0.0.1.00000000}.{c0771f6d-1c3c-4ea6-863e-e3939de484bf}</Device><DisplayName>Mikrofon (ALPHA-X)</DisplayName><Type>SpecificDevice</Type></DefaultCaptureDevice><DefaultCommunicationCaptureDevice><Device>{0.0.1.00000000}.{c0771f6d-1c3c-4ea6-863e-e3939de484bf}</Device><DisplayName>Mikrofon (ALPHA-X)</DisplayName><Type>SpecificDevice</Type></DefaultCommunicationCaptureDevice></Results><InputXml><Request requestId="" action="Aux.GetCaptureDevices.1" /></InputXml></Response>
+[0002.74] VoiceChat: Info  VivoxApi::CommandHandler::ProcessRequest(645) - this=0x1f6b12d4450,ToXml(request, true)=<Request requestId="" action="Aux.GetRenderDevices.1" />
+[0002.74] VoiceChat: Info  VivoxApi::CommandHandler::PassCommand(812) - this=0x1f6b12d4450,ToXml(&command->GetResp().base, true)=<Response requestId="" action="Aux.GetRenderDevices.1"><ReturnCode>0</ReturnCode><Results><StatusCode>0</StatusCode><StatusString /><RenderDevices><RenderDevice><Device>{0.0.0.00000000}.{c59f4f6d-9b8d-4281-a606-853ee5e7d8f8}</Device><DisplayName>HoparlÒ¶r (ALPHA-X)</DisplayName><Type>SpecificDevice</Type></RenderDevice><RenderDevice><Device>{0.0.0.00000000}.{d7e9f242-9b9f-4a08-91d4-1774b2e4f59a}</Device><DisplayName>HoparlÒ¶r (Realtek(R) Audio)</DisplayName><Type>SpecificDevice</Type></RenderDevice><RenderDevice><Device>Default System Device</Device><DisplayName>Default System Device</DisplayName><Type>DefaultSystemDevice</Type></RenderDevice><RenderDevice><Device>Default Communication Device</Device><DisplayName>Default Communication Device</DisplayName><Type>DefaultCommunicationDevice</Type></RenderDevice><RenderDevice><Device>No Device</Device><DisplayName>No Device</DisplayName><Type>NullDevice</Type></RenderDevice></RenderDevices><CurrentRenderDevice><Device>Default System Device</Device><DisplayName>Default System Device</DisplayName><Type>DefaultSystemDevice</Type></CurrentRenderDevice><EffectiveRenderDevice><Device>{0.0.0.00000000}.{c59f4f6d-9b8d-4281-a606-853ee5e7d8f8}</Device><DisplayName>HoparlÒ¶r (ALPHA-X)</DisplayName><Type>SpecificDevice</Type></EffectiveRenderDevice><DefaultRenderDevice><Device>{0.0.0.00000000}.{c59f4f6d-9b8d-4281-a606-853ee5e7d8f8}</Device><DisplayName>HoparlÒ¶r (ALPHA-X)</DisplayName><Type>SpecificDevice</Type></DefaultRenderDevice><DefaultCommunicationRenderDevice><Device>{0.0.0.00000000}.{c59f4f6d-9b8d-4281-a606-853ee5e7d8f8}</Device><DisplayName>HoparlÒ¶r (ALPHA-X)</DisplayName><Type>SpecificDevice</Type></DefaultCommunicationRenderDevice></Results><InputXml><Request requestId="" action="Aux.GetRenderDevices.1" /></InputXml></Response>
+[0002.74] VoiceChat: Vivox Version: 4.9.0002.31672
+[0002.74] Init: Game is version 0.23.1073.9.
+[0003.34] Log: Initializing Steamworks
+[0003.34] Log: Steam Client API initialized 1
+[0003.34] Log: [OnlineSubsystemSteamworks.OnlineSubsystemSteamworks].GameVersion is not set. Server advertising will fail
+[0003.34] Log: Steam Game Server API initialized 0
+[0003.34] Log: Discord Client API Disabled!
+[0003.34] Init: Presizing for 60000 objects not considered by GC, pre-allocating 0 bytes.
+[0003.34] Init: Object subsystem initialized
+[0003.34] Log: CachePaths() took 0.00 Seconds
+[0003.34] Log: TgAIBehaviorTreeManager :: Loading behavior trees
+[0003.38] Log: TgAIBehaviorTreeManager :: Successfully loaded behavior trees
